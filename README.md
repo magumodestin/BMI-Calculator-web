@@ -25,17 +25,8 @@ getroom/
 ├── home.html      # Landing page
 ├── home.css       # Styles
 ├── home.js        # Hamburger menu toggle
-└── coverhome.jpg  # Hero image (add your own)
+└── coverhome.jpg
 ```
-
-## Getting started
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/<your-username>/getroom.git
-   ```
-2. Open the folder and make sure `coverhome.jpg` is in it.
-3. Open `home.html` in your browser, or serve it with XAMPP / Live Server.
 
 ## Roadmap
 
@@ -52,4 +43,4 @@ _Add a screenshot of the home page here._
 
 ## Author
 
-Built by **Destin**, Information Systems student.
+Built by Destine, Junior front End developer student.
