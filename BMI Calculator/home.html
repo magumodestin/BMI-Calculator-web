@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="home.css" />
+    <title>BMI Calculator</title>
+  </head>
+  <body>
+    <main class="card">
+      <header class="headings">
+        <h1>BMI Calculator</h1>
+        <p>Enter your height and weight to see your body mass index.</p>
+      </header>
+
+      <div class="field">
+        <label for="height">Height (cm)</label>
+        <input type="number" id="height" placeholder="e.g. 170" min="50" max="250" />
+      </div>
+
+      <div class="field">
+        <label for="weight">Weight (kg)</label>
+        <input type="number" id="weight" placeholder="e.g. 65" min="10" max="400" />
+      </div>
+
+      <button type="button" class="calculatebtn" onclick="calculateBMI()">
+        Calculate BMI
+      </button>
+
+      <p id="error" class="error" role="alert"></p>
+
+      <section id="output" class="output" hidden>
+        <p class="output-label">Your BMI</p>
+        <p id="result" class="result"></p>
+        <p class="condition-text">
+          Weight condition: <span id="condition"></span>
+        </p>
+
+        <div class="scale" aria-hidden="true">
+          <div class="bar">
+            <span class="seg under"></span>
+            <span class="seg normal"></span>
+            <span class="seg over"></span>
+            <span class="seg obese"></span>
+          </div>
+          <div id="marker" class="marker"></div>
+        </div>
+        <div class="scale-labels" aria-hidden="true">
+          <span>Underweight</span>
+          <span>Normal</span>
+          <span>Overweight</span>
+          <span>Obese</span>
+        </div>
+      </section>
+    </main>
+
+    <script src="home.js"></script>
+  </body>
+</html>
