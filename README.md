@@ -1,46 +1,58 @@
-# GetRoom
+# BMI Calculator
 
-A student accommodation website that helps students find rooms close to their institution. Built with plain HTML, CSS and JavaScript.
-
-> **Status:** In progress. The home page is built; other pages are being added.
+A simple web app that calculates your Body Mass Index (BMI) from your height and weight and tells you which weight category you fall into. Built with plain HTML, CSS and JavaScript.
 
 ## Features
 
-- Responsive landing page with a sticky navbar and a hamburger menu on small screens
-- Search card to pick an institution, enter a location and search by room type or NSFAS
-- "How it works" section explaining the three steps: Search, Compare, Book
-- Custom GetRoom logo drawn with inline SVG
-- Clean blue theme that works on desktop, tablet and mobile
+- Enter height in centimetres and weight in kilograms
+- Shows your BMI to one decimal place
+- Colour-coded weight condition: Underweight, Normal weight, Overweight or Obese
+- Visual scale with a marker that shows where your BMI falls
+- Input validation with clear error messages (height 50-250 cm, weight 10-400 kg)
+- Responsive design for desktop and mobile
+
+## How BMI is calculated
+
+```
+BMI = weight (kg) / height (m)²
+```
+
+| BMI         | Category      |
+| ----------- | ------------- |
+| Below 18.5  | Underweight   |
+| 18.5 - 24.9 | Normal weight |
+| 25 - 29.9   | Overweight    |
+| 30 and over | Obese         |
+
+> BMI is a general screening tool and does not replace advice from a health professional.
 
 ## Tech stack
 
 - HTML5
-- CSS3 (Flexbox, Grid, media queries)
+- CSS3
 - JavaScript (vanilla)
 
 ## Project structure
 
 ```
-getroom/
-├── home.html      # Landing page
-├── home.css       # Styles
-├── home.js        # Hamburger menu toggle
-└── coverhome.jpg
+bmi-calculator/
+├── home.html   # Page structure
+├── home.css    # Styles
+└── home.js     # BMI calculation and validation
 ```
 
-## Roadmap
+## Getting started
 
-- [ ] Rooms listing page with filters
-- [ ] Institution page
-- [ ] Room details page
-- [ ] About and Contact pages
-- [ ] Login and sign up
-- [ ] Connect search to a database
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/<your-username>/bmi-calculator.git
+   ```
+2. Open `home.html` in your browser. No installation needed.
 
 ## Screenshot
 
-_Add a screenshot of the home page here._
+_Add a screenshot of the calculator here._
 
 ## Author
 
-Built by Destine, Junior front End developer student.
+Built by **Destin**, Information Systems student.
